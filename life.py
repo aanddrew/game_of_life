@@ -36,8 +36,8 @@ cells = []
 def create_cells():
 	del cells[:]
 	effective_size = Cell.size + 1
-	numRows = (disp_height-100)/(effective_size)
-	numCols = disp_width/(effective_size)
+	numRows = int((disp_height-100)/(effective_size))
+	numCols = int(disp_width/(effective_size))
 
 	for r in range(0, numRows):
 		cols = []
